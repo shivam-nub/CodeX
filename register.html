@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="script/login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #474444;
+        }
+    </style>
+</head>
+
+<body>
+<!--Navbar Start-->
+<div class="navbar navbar-dark sticky">
+  <!--Left Link-->
+  <img src="img/logo2.png" alt="abc" style="width: 100px;">
+      <a href="#" class="glowBtn" style="top: -66px; left: 30px;">CodeX</a>  
+  <!--Right Links-->
+    <a href="login.htm" class="glowBtn" style="top: 10px; float:right;">Signup/Login</a>
+    <a href="Contact.htm" class="glowBtn" style="top: 10px; float:right;">Contact Us</a>
+	<a href="about.htm" class="glowBtn" style="top: 10px; float:right;">About Us</a>
+    <a href="random.htm" class="glowBtn" style="top: 10px; float:right;">Random Quote</a>
+	<a href="ide.htm" class="glowBtn" style="top: 10px; float:right;">IDE</a>
+    
+</div>
+<!--End Navbar-->
+    <div id="container-register">
+        <div id="title">
+            <i class="material-icons lock">lock</i>  Register
+        </div>
+
+        <form action="db/register.php" method="post">
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">email</i>
+                </div>
+                <input name="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input name="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input name="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #1cccff">I accept Terms of Service</span>
+            </div>
+
+            <input type="submit" value="Register" name="reg_user"/>
+        </form>
+
+        <div class="privacy">
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="register">
+            Do you already have an account?
+            <a href="login.htm"><button id="register-link">Log In here</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
